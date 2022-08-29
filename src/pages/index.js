@@ -26,11 +26,7 @@ const linkStyle = {
   verticalAlign: "5%",
 }
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+
 
 const descriptionStyle = {
   color: "#232129",
@@ -40,11 +36,7 @@ const descriptionStyle = {
   lineHeight: 1.25,
 }
 
-const docLink = {
-  text: "Installed",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+
 
 const badgeStyle = {
   color: "#fff",
@@ -67,45 +59,14 @@ const links = [
     text: "installed",
     url: "https://www.gatsbyjs.com/docs/tutorial/",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "",
     color: "#E95800",
   },
   {
     text: "Uninstalled",
     url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+    description:"",
     color: "#E95800",
-  },
-  {
-    text: "App Platform",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-  
-  },
-  {
-    text: "Backend",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-  },
-  {
-    text: "Location",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-  },
-  {
-    text: "OCR",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-  },
-  {
-    text: "Payments",
-    url: "https://www.gatsbyjs.com/plugins",
-  },
-  {
-    text: "Social",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-  },
-  {
-    text: "Utillites",
-    url: "https://www.gatsbyjs.com/plugins",
   },
 ]
 
@@ -113,17 +74,10 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <p style={paragraphStyles}>
-        latest Update: 
+        latest Update: latestUpdatedDate
       </p>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
+       
         {links.map(link => (
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
             <span>
