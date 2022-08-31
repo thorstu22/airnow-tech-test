@@ -1,5 +1,5 @@
 // import { render, screen } from '@testing-library/react';
-// import SDK-list from './SDK-list';
+// import {SDK-list} from './SDK-list';
 
 // test('renders list of installed SDKs', () => {
 //   render(<SDK-list />);
